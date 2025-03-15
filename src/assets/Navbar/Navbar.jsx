@@ -21,14 +21,14 @@ const Navbar = ({setShowlogin}) => {
     setToken("");
     navigate("/");
   }
-
+  const baseUrl = process.env.BASE_URL || '/Grocery/';
 
 
   return (
     <nav className="navbar">
-      <Link to='/Grocery/' ><div className="logo">GroceryStore</div></Link>
+      <Link to='{baseUrl}' ><div className="logo">GroceryStore</div></Link>
       <ul className="navbar-menu">
-        <Link to='/Grocery/'
+        <Link to='{baseUrl}'
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
