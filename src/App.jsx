@@ -18,11 +18,11 @@ import MyOrders from './assets/MyOrders/MyOrders';
       <div className="App">
         <Navbar setShowlogin={setShowlogin}/>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/cart" element={<Cart/>} />
-          <Route path="/order" element={<Placeorder/>} />
-          <Route path="/Verify" element={<Verify/>} />
-          <Route path="/myorders" element={<MyOrders />} />
+          <Route path="/Grocery/" element={<Homepage />} />
+          <Route path="/Grocery/cart" element={<Cart/>} />
+          <Route path="/Grocery/order" element={<Placeorder/>} />
+          <Route path="/Grocery/Verify" element={<Verify/>} />
+          <Route path="/Grocery/myorders" element={<MyOrders />} />
         </Routes>
       </div>
       <Footer />
