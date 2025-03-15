@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import heroImage from "/src/assets/Images/Hero.jpeg"; // Add your hero image to the project
+import heroImage from "/assets/Images/Hero.jpeg"; // Add your hero image to the project
 
 const Home = () => {
   return (

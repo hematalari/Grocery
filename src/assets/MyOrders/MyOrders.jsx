@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './MyOrders.css'
 import { storeContext } from '../Context/Context.jsx'
 import axios from 'axios'
-import Package_icon from '../Images/package.png'
+import Package_icon from '../../../public/assets/Images/package.png'
 
 const MyOrders = () => {
 

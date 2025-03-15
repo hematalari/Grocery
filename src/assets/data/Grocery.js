@@ -1,9 +1,9 @@
-import fruits from '../Images/fruits.png'
-import veggies from '../Images/veggies.png'
-import drinks from '../Images/drinks.png'
-import dairy from '../Images/dairy.png'
-import meat from '../Images/meat.png'
-import flour from '../Images/flour.png'
+import fruits from '/assets/Images/fruits.png'
+import veggies from '/assets/Images/veggies.png'
+import drinks from '/assets/Images/drinks.png'
+import dairy from '/assets/Images/dairy.png'
+import meat from '/assets/Images/meat.png'
+import flour from '/assets/Images/flour.png'
 
 export const grocery_list = [
     {_id:'1', name: 'Fruits', image: fruits , price:'0.80', weight:'500g',description:"good for health", category:"Fruits"}, 

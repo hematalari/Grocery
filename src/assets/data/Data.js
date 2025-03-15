@@ -1,10 +1,10 @@
-import fruits from '../Images/fruits.png'
-import veggies from '../Images/veggies.png'
-import drinks from '../Images/drinks.png'
-import dairy from '../Images/dairy.png'
-import meat from '../Images/meat.png'
-import flour from '../Images/flour.png'
-import package_icon from '../Images/package.png'
+import fruits from '/assets/Images/fruits.png'
+import veggies from '/assets/Images/veggies.png'
+import drinks from '/assets/Images/drinks.png'
+import dairy from '/assets/Images/dairy.png'
+import meat from '/assets/Images/meat.png'
+import flour from '/assets/Images/flour.png'
+import package_icon from '/assets/Images/package.png'
 
 
 
