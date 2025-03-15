@@ -19,16 +19,16 @@ const Navbar = ({setShowlogin}) => {
   const logout =()=>{
     localStorage.removeItem("token");
     setToken("");
-    navigate("/");
+    navigate("/Grocery/");
   }
 
 
 
   return (
     <nav className="navbar">
-      <Link to='/' ><div className="logo">GroceryStore</div></Link>
+      <Link to='/Grocery/' ><div className="logo">GroceryStore</div></Link>
       <ul className="navbar-menu">
-        <Link to='/'
+        <Link to='/Grocery/'
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
@@ -62,14 +62,14 @@ const Navbar = ({setShowlogin}) => {
       <div className="navbar-right">
         <FontAwesomeIcon icon={faMagnifyingGlass} />
         <div className="navbar-search-icon">
-          <Link to='/cart'><FontAwesomeIcon icon={faBasketShopping} /></Link>
+          <Link to='/Grocery/cart'><FontAwesomeIcon icon={faBasketShopping} /></Link>
           <div className={getTotalcartvalue()===0?"":"dot"}></div>
         </div>
         {!token?<button onClick={()=>{setShowlogin(true)}}>Sign-in</button>:
         <div className="navbar-profile">
           <CgProfile />
           <ul className="nav-profile-dropdown">
-            <li onClick={()=>{navigate("/myorders")}}><FiShoppingBag /><p>Orders</p></li>
+            <li onClick={()=>{navigate("/Grocery/myorders")}}><FiShoppingBag /><p>Orders</p></li>
             <hr />
             <li onClick={logout}><FiLogOut /><p>Logout</p></li>
           </ul>
