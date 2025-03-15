@@ -2,7 +2,7 @@
   import Navbar from './assets/Navbar/Navbar';
   import Footer from './assets/Footer/Footer';
   import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Placeorder from './assets/Placeorder/Placeorder';
 import Cart from './assets/Cart/Cart';
 import Loginpopup from './assets/Loginpopup/Loginpopup';
@@ -16,6 +16,7 @@ import MyOrders from './assets/MyOrders/MyOrders';
       <>
       {showlogin?<Loginpopup setShowlogin={setShowlogin} />:<></>}
       <div className="App">
+        <HashRouter>
         <Navbar setShowlogin={setShowlogin}/>
         <Routes>
           <Route path="/Grocery/" element={<Homepage />} />
@@ -24,6 +25,7 @@ import MyOrders from './assets/MyOrders/MyOrders';
           <Route path="/Grocery/Verify" element={<Verify/>} />
           <Route path="/Grocery/myorders" element={<MyOrders />} />
         </Routes>
+        </HashRouter>
       </div>
       <Footer />
       </>
