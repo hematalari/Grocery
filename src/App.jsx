@@ -16,7 +16,6 @@ import MyOrders from './assets/MyOrders/MyOrders';
       <>
       {showlogin?<Loginpopup setShowlogin={setShowlogin} />:<></>}
       <div className="App">
-        <HashRouter>
         <Navbar setShowlogin={setShowlogin}/>
         <Routes>
           <Route path="/Grocery/" element={<Homepage />} />
@@ -25,7 +24,6 @@ import MyOrders from './assets/MyOrders/MyOrders';
           <Route path="/Grocery/Verify" element={<Verify/>} />
           <Route path="/Grocery/myorders" element={<MyOrders />} />
         </Routes>
-        </HashRouter>
       </div>
       <Footer />
       </>

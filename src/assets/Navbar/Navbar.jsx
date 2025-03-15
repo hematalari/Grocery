@@ -11,6 +11,7 @@ import { CgProfile } from "react-icons/cg";
 import { FiLogOut, FiShoppingBag} from "react-icons/fi";
 
 
+
 const Navbar = ({setShowlogin}) => {
   const [menu, setMenu] = useState("home");
   const {getTotalcartvalue, token, setToken} = useContext(storeContext)
@@ -19,16 +20,16 @@ const Navbar = ({setShowlogin}) => {
   const logout =()=>{
     localStorage.removeItem("token");
     setToken("");
-    navigate("/");
+    navigate("/Grocery/");
   }
-  const baseUrl = process.env.BASE_URL || '/Grocery/';
+
 
 
   return (
     <nav className="navbar">
-      <Link to='{baseUrl}' ><div className="logo">GroceryStore</div></Link>
+      <Link to='/Grocery/' ><div className="logo">GroceryStore</div></Link>
       <ul className="navbar-menu">
-        <Link to='{baseUrl}'
+        <Link to='/Grocery/'
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
