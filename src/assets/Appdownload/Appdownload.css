@@ -1,0 +1,23 @@
+.download{
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: max(2.5vw,15px);
+    text-align: center;
+    font-weight: 400;
+}
+.download-platform{
+    display: flex;
+    justify-content: center;
+    gap:max(2vw,10px);
+    margin-top: 40px;
+}
+.download-platform .icon{
+    font-size: max(4vw,26px);
+    width:max(5vw,40px);
+    max-width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.download-platform .icon :hover{
+   transform: scale(1.05);
+}

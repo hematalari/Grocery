@@ -1,0 +1,116 @@
+.hero {
+    height: 34vw;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5vw;
+    max-width:80%;
+    animation: fadeIn 3s;
+  }
+  .header-content h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .header-content p{
+    max-width:80%;
+  }
+  .shopnow{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border:none;
+  }
+  @media (max-width:2150px) {
+    .hero{
+      height: 38vw;
+    }
+    .header-content{
+      max-width: 80%;
+      font-size: 28px;
+    }
+    .hero button{
+      padding: 10px;
+      font-size: 18px;
+    } 
+  }
+  @media (max-width:1050) {
+    .hero{
+      height: 34vw;
+    }
+    .header-content{
+      max-width: 75%;
+      font-size: 26px;
+    }  
+  }
+  
+  @media (max-width:840px) {
+    .hero{
+      height: 32vw;
+    }
+    .header-content{
+      max-width: 75%;
+      font-size: 18px;
+    }  
+    .header-content p{
+      display: none;
+    }
+    .hero button{
+      padding: 8px;
+      font-size: 16px;
+    } 
+  }
+  @media (max-width:580px) {
+    .header-content{
+      max-width: 75%;
+      font-size: 16px;
+    }  
+    .header-content p{
+      display: none;
+    }
+    .hero button{
+      padding: 6px;
+      font-size: 14px;
+    } 
+  }
+  @media (max-width:430px) {
+    .header-content{
+      max-width: 75%;
+      font-size: 12px;
+    }  
+    .header-content p{
+      display: none;
+    }
+    .hero button{
+      padding: 4px;
+      font-size: 12px;
+    } 
+  }
+  @media (max-width:375px) {
+    .header-content{
+      max-width: 75%;
+      font-size: 8px;
+    }  
+    .header-content p{
+      display: none;
+    }
+    .hero button{
+      padding: 2px;
+      font-size: 10px;
+    } 
+  }
